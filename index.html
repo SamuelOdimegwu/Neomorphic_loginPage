@@ -7,17 +7,18 @@
 </head>
 
 <body>
+    <div id="output"></div>
     <div class="container">
         <div class="pic">
             <img src="gamer_pic.jpg">
         </div>
-        <div class="inputs">
-            <input type="text" placeholder="Username" id="username">
+        <form class="inputs" name="form1">
+            <input type="text" placeholder="Username" id="username" onsubmit="required()">
             <input type="password" placeholder="password" id="password">
-        </div>
+        </form>
         <div class="buttons">
-            <span><button type="submit">Login</button></span>
-            <span><button type="submit">Sign Up</button></span>
+            <span><button type="submit" id="login">Login</button></span>
+            <span><button type="submit" id="signUp">Sign Up</button></span>
         </div>
     </div>
 

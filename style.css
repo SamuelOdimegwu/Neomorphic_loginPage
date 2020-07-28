@@ -5,7 +5,21 @@
 }
 
 body {
-    background-color: rgb(177, 174, 174);
+    background-color: aqua;
+    background-image: radial-gradient(rgb(5, 70, 70) 20%, transparent 20%), radial-gradient(#fafafa 20%, transparent 20%);
+    background-position: 0 0, 50px 50px;
+    background-size: 100px 100px;
+    height: 200px;
+    width: 100%;
+}
+
+#output {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: aqua;
+    background-color: rgb(5, 70, 70);
 }
 
 .container {
@@ -24,8 +38,8 @@ body {
     -moz-border-radius: 50px;
     -ms-border-radius: 50px;
     -o-border-radius: 50px;
-    background: linear-gradient(-45deg, rgba(0, 0, 0, 0.22), rgba(255, 255, 255, 0.25));
-    box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25), -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+    background: linear-gradient(-45deg, rgb(5, 70, 70), aqua);
+    box-shadow: 12px 12px 16px 0 black, -8px -8px 12px 0 rgba(255, 255, 255, 0.637);
 }
 
 img {
@@ -38,7 +52,7 @@ img {
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
     background: linear-gradient(-45deg, rgba(0, 0, 0, 0.22), rgba(255, 255, 255, 0.25));
-    box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25), -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+    box-shadow: 12px 12px 16px 0 black, -8px -8px 12px 0 rgba(255, 255, 255, 0.993);
 }
 
 input {
@@ -47,14 +61,20 @@ input {
     text-align: center;
     width: 250px;
     border-radius: 50px;
-    border-color: white;
+    border-color: aqua;
+    color: white;
     height: 30px;
-    background-color: rgb(199, 199, 199);
-    box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.2), inset -6px -6px 10px 0 rgba(133, 116, 116, 0.5);
+    background-color: aqua;
+    box-shadow: inset 12px 12px 12px 0 black, inset -6px -6px 10px 0 rgba(253, 253, 253, 0.5);
     -webkit-border-radius: 50px;
     -moz-border-radius: 50px;
     -ms-border-radius: 50px;
     -o-border-radius: 50px;
+}
+
+::placeholder {
+    color: aqua;
+    opacity: 1;
 }
 
 input:focus {
@@ -69,12 +89,13 @@ input:focus {
 button {
     background-color: white;
     border-radius: 10px;
-    border-color: white;
-    padding: 3px;
+    border-color: aqua;
+    color: aqua;
+    padding: 5px;
     font-size: 17px;
     margin: 40px 10px;
     background: linear-gradient(-45deg, rgba(0, 0, 0, 0.22), rgba(255, 255, 255, 0.25));
-    box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25), -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+    box-shadow: 12px 12px 16px 0 black, -5px -5px 12px 0 rgba(214, 214, 214, 0.993);
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
